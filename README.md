@@ -75,3 +75,8 @@ builder.Start(ref async);
 * __MoveNext__는 계속 실행됩니다. __MoveNext__ 내부의 상태(실행 포인터) 관리는 클래스 내부의 구현체에서 직접 해야합니다.
 * `AwaitUnsafeOnCompleted`는 어떠한 __Task__가 완료되면 다시 __MoveNext__를 호출하도록 예약하는 역할을 합니다.
 * 이 작업이 반복되면서 `await/async`가 동작하게 됩니다.
+
+결론
+----
+* stackless 코루틴은 stackful 코루틴처럼 사기군같은 컨텍스트 스위칭 없이 자체 상태머신을 이용한 멀쩡해보이는 방법으로 구현한다.
+* 컴파일러가 자동으로 코드를 길게 풀어준다.
