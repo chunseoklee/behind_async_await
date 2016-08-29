@@ -52,10 +52,6 @@ class MyAsync : System.Runtime.CompilerServices.IAsyncStateMachine
             case 2:
                 {
                     Console.WriteLine("C : " + ptr.ToString());
-                    var task = Task.Delay(1000).GetAwaiter();
-                    builder.AwaitUnsafeOnCompleted(ref task, ref _this);
-
-                    ptr++;
                     break;
                 }
         }
