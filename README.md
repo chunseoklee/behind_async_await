@@ -16,7 +16,7 @@ static async void Foo()
 }
 ```
 
-
+아래의 코드는 `Foo` 함수를 [디컴파일](https://github.com/pjc0247/behind_async_await/blob/master/decompiled.il) 한 결과물을 기반으로 다시 작성되었습니다. 대충 생략함
 ```cs
 class MyAsync : System.Runtime.CompilerServices.IAsyncStateMachine
 {
